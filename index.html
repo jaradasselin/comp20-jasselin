@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Fail</title>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	</head>
+
+	<body>
+		<h1 id="title">Fail</h1>
+		<div>
+			<video src="https://www.cs.tufts.edu/comp/20/fail.mp4" id="failvideo" controls></video>
+		</div>
+		<div id="lyrics"></div>
+		<script> // the lyrics of "Emotions" by Mariah Carey
+			var words = ["You've got me feelin' emotions", "Deeper than I've ever dreamed of", "You've got me feelin' emotions", "Higher than the heavens above", "I feel good, I feel nice", "I've never felt so satisfied", "I'm in love, I'm alive", "Intoxicated, flyin' high", "Feels like a dream", "When you touch me tenderly", "I don't know if it's real", "But I like the way I feel inside", "You've got me feelin' emotions", "Deeper than I've ever dreamed of", "You've got me feelin' emotions", "Higher than the heavens above"];
+			var vid = document.getElementById("failvideo");
+			var cap = document.getElementById("lyrics"); // "cap" for caption
+			vid.addEventListener("timeupdate", function() {
+				var time = vid.currentTime;
+				if(time > 8.5 && time < 12){
+					cap.innerHTML = words[0];
+				}
+				if(time > 13 && time < 17){
+					cap.innerHTML = words[1];
+				}
+				if(time > 17 && time < 21){
+					cap.innerHTML = words[2];
+				}
+				if(time > 21 && time < 24){
+					cap.innerHTML = words[3];
+				}
+				if(time > 24 && time < 29.5){
+					cap.innerHTML = words[4];
+				}
+				if(time > 29.5 && time < 34){
+					cap.innerHTML = words[5];
+				}
+				if(time > 34 && time < 38){
+					cap.innerHTML = words[6];
+				}
+				if(time > 38 && time < 44){
+					cap.innerHTML = words[7];
+				}
+				if(time > 44 && time < 46){
+					cap.innerHTML = words[8];
+				}
+				if(time > 46 && time < 50){
+					cap.innerHTML = words[9];
+				}
+				if(time > 50 && time < 53){
+					cap.innerHTML = words[10];
+				}
+				if(time > 53 && time < 59){
+					cap.innerHTML = words[11];
+				}
+				if(time > 59 && time < 63.5){
+					cap.innerHTML = words[12];
+				}
+				if(time > 63.5 && time < 66.5){
+					cap.innerHTML = words[13];
+				}
+				if(time > 66.5 && time < 70.5){
+					cap.innerHTML = words[14];
+				}
+				if(time > 70.5){
+					cap.innerHTML = words[15];
+				}
+			});
+		</script>
+	</body>
+</html>	
+
+
+
+
+
+
+
+
+
+
